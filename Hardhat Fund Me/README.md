@@ -27,6 +27,7 @@ npm install --save-dev  @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethe
 yarn add --dev @chainlink/contracts
 yarn hardhat deploy --tags mocks
 yarn hardhat deploy --network rinkeby
+yarn hardhat test --grep "amount funded"   
 ```
 
 # Etherscan verification
