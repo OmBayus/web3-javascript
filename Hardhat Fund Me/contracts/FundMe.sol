@@ -101,19 +101,23 @@ contract FundMe {
         require(callSuccess, "Call Failed");
     }
 
-    function getOwner() public view returns(address){
+    function getOwner() public view returns (address) {
         return i_owner;
     }
 
-    function getFunder(uint256 index) public view returns(address){
+    function getFunder(uint256 index) public view returns (address) {
         return s_funders[index];
     }
 
-    function getAddressToAmountFunded(address funder) public view returns(uint256){
+    function getAddressToAmountFunded(address funder)
+        public
+        view
+        returns (uint256)
+    {
         return s_addressToAmountFunded[funder];
     }
 
-    function getPriceFeed() public view returns(AggregatorV3Interface){
+    function getPriceFeed() public view returns (AggregatorV3Interface) {
         return s_priceFeed;
     }
 }
