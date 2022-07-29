@@ -9,10 +9,23 @@
 </head>
 
 <body>
-    Hello!
-    <button onclick="connect()" id="connectBtn">Connect</button>
 
-    <script src="./index.js"></script>
+    <button id="connectBtn">Connect</button>
+    
+    <div>
+        <label>Eth Amount</label>
+        <input type="text" id="ethAmount" placeholder="0.1" />
+        <button id="fundBtn">Fund</button>
+    </div>
+
+    <div>
+        <label>Fund Amount</label>
+        <p id="balance">0</p>
+        <button id="withdrawBtn">Withdraw</button>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+
 </body>
 
 </html>
