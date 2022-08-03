@@ -27,6 +27,13 @@ module.exports = {
           accounts: [PRIVATE_KEY],
         }
     },
+    gasReporter:{
+        enabled:false,
+        currency: "USD",
+        outputFile: "gas-reporter.txt",
+        noColors: true,
+        coinmarketcap: COINMARKETCAP_API_KEY
+    },
     solidity: "0.8.9",
     namedAccounts: {
         deployer: {

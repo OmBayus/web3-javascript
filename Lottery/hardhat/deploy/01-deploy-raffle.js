@@ -51,4 +51,4 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
     }
 }
 
-module.exports.tag = ["all","raffle"]
+module.exports.tags = ["all", "raffle"]
